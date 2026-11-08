@@ -1,0 +1,111 @@
+:root{
+--h1-font:"Poppins";
+}
+body{
+    display: flex;
+   flex-direction: column;  /* Stacks your sections vertically */
+   justify-content: center; /* Centers items vertically on the screen */
+   align-items: center;     /* Centers items horizontally on the screen */
+   min-height: 100vh;
+   width: 100vw;      /* Makes the body span the full height of the viewport */
+   margin: 0;       
+   background-color: #0A0A0A;
+ transition: all 0.5s ease;
+   transform-origin: center center;
+
+
+}
+#intro{
+   height: 200px;
+   color: white;
+   padding: 60px;
+   text-align: center;
+   margin-top:10px;
+}
+#intro h1{
+font-family: var(--h1-font), sans-serif;
+ font-weight: 600;
+ font-style: normal;
+   font-size: clamp(2rem, 3rem + 1vw, 6rem);
+}
+#intro p{
+   font-family: var(--h1-font), sans-serif;
+   font-weight: 200px;
+   font-size: clamp(0.875rem, 0.7rem + 1vw, 1.5rem);
+}
+.a{
+    transform: translateY(80px);
+   opacity: 0;
+   transition: all 1.99s;
+}
+.show{
+   opacity: 1;
+    transform: translateY(0);
+  
+}
+.main-idea{
+   margin-top: 20px;
+  color: white;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.main-idea p{
+      font-family: var(--h1-font), sans-serif;
+   font-weight: 200px;
+   letter-spacing: 0.12ch;
+   text-align: center;
+   line-height: 30px;
+}
+.main-idea h1{
+   font-family: var(--h1-font);
+     font-weight: 600;
+ font-style: normal;
+ font-size: 2rem;
+ text-align: center;
+   letter-spacing: 0.12ch;
+}
+.footer{
+   padding: 80px;
+   color: white;
+    font-family: var(--h1-font);
+    text-align: center;
+}
+.footer h1{
+   font-size: calc(0.5vw + 2rem);
+   font-weight: 900;
+       letter-spacing: 0.12ch;
+}
+.footer h5{
+  font-family: var(--h1-font), sans-serif;
+   font-weight: 200px;
+   letter-spacing: 0.12ch;
+   font-size: clamp(0.875rem, 0.7rem + 1vw, 1.5rem);
+}
+#nav{
+  width: 210px;
+  height: 80px;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, rgba(30, 30, 35, 0.4) 0%, rgba(10, 10, 12, 0.95) 100%);
+   gap:  10px;
+   position: fixed;
+  display: flex;
+  top: 78%;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+ box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+ backdrop-filter: blur(10px);
+}
+#nav button{
+   border-radius: 50px;
+   background: rgba(255, 255, 255, 0.08);
+ color: #ffffff;
+ border: 1px solid rgba(255, 255, 255, 0.15);
+ padding: 6px 12px;
+ font-family: monospace;
+ font-weight: 600;
+ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+ cursor: pointer;
+ margin-left:10px;
+}
+
