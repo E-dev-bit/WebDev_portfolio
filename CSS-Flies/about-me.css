@@ -1,4 +1,6 @@
- body{
+ 
+
+body{
  padding: 0px;
    margin: 0px;
     background-color: var(--bg-main);
@@ -291,7 +293,7 @@ background-color: #4A5568;
 }
 .contact-me-form .row{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
 }
 .contact-me-form p {
    font-style: italic;
@@ -314,7 +316,8 @@ letter-spacing: 1px;
 #xbutton{
    font-size: 3rem;
    position: absolute;
-   left: 330px;
+   display: flex;
+   right: 0px;
    top: 0px;
    cursor: pointer;
 }
@@ -340,3 +343,4 @@ letter-spacing: 1px;
 #submit:hover{
  transform: scale(1.2);
 }
+
