@@ -4,7 +4,6 @@
     background-color: var(--bg-main);
     transition: all 0.5s ease;
    transform-origin: center center;
-   min-width: 50px;
 }
 :root{
 --bg-main: #09090B;
@@ -268,39 +267,6 @@ color: white;
 .show{
    opacity: 1;
 }
-@media (max-width: 600px) {
-
-
-   .contact-me-form {
-       width: 100%;
-       max-width: 100%;
-       padding: 30px 16px;
-       overflow: hidden;
-   }
-
-
-   .contact-me-form h1 {
-       font-size: clamp(1.5rem, 6vw, 2rem);
-   }
-
-
-   .contact-me-form h2 {
-       font-size: clamp(1.3rem, 5vw, 1.8rem);
-   }
-
-
-   .contact-me-form p,
-   .contact-me-form h2 {
-       font-size: clamp(1rem, 4vw, 1.2rem);
-       max-width: 100%;
-       overflow-wrap: anywhere;
-       line-height: 1.6;
-   }
-
-
-}
-
-
 .contact-me-form{
    display: flex;
    justify-content: flex-start;
@@ -312,8 +278,9 @@ color: white;
       top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   width: auto;
+   width: auto; /* auto */
    max-height: 85vh;
+  /* this one change */
    overflow-y: scroll;
    z-index: 2;
    border: 2px solid var(--borders);
@@ -342,6 +309,43 @@ font-style: italic;
 font-size: 2rem;
 font-family: var(--p1-font), Courier, monospace;
 letter-spacing: 1px;
+}
+@media screen and (max-width: 600px) {
+   .contact-me-form {
+       width: 80%; /* auto */
+      height: 100%;
+       padding: 30px;
+       overflow: scroll;
+   }
+
+
+   .contact-me-form h1 {
+       font-size: clamp(1.5rem, 6vw, 2rem);
+   }
+
+
+   .contact-me-form h2 {
+       font-size: clamp(1.3rem, 5vw, 1.8rem);
+   }
+
+
+   .contact-me-form p,
+   .contact-me-form h2 {
+       font-size: clamp(1rem, 4vw, 1.2rem);
+       max-width: 100%;
+       overflow-wrap: anywhere;
+       line-height: 1.6;
+   }
+
+
+#xbutton{
+   font-size: 3rem;
+   position: absolute;
+   display: flex;
+   left: 0px;
+   top: 0px;
+   cursor: pointer;
+}
 }
 #xbutton{
    font-size: 3rem;

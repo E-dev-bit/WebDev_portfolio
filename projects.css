@@ -160,6 +160,7 @@ color: white;
   border: 1px solid rgba(255, 255, 255, 0.12);
  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
  backdrop-filter: blur(10px);
+ transition: all 0.5s ease;
 }
 .header{
  padding: 30px;
@@ -268,6 +269,7 @@ background-color: var(--borders);
    display: flex;
    flex-direction: column;
   margin-bottom: 25px;
+  margin-top: 15px;
 }
 .contact-me-form p {
    font-style: italic;
@@ -276,8 +278,8 @@ background-color: var(--borders);
    font-weight: 500;
 }
 .contact-me-form h1{
-font-style: italic;
-font-size: 2rem;
+font-style: normal;
+font-size: 3.2rem;
 font-family: var(--h1-font), Courier, monospace;
 letter-spacing: 1px;
 }
@@ -287,10 +289,48 @@ font-size: 2rem;
 font-family: var(--p1-font), Courier, monospace;
 letter-spacing: 1px;
 }
+@media screen and (max-width: 600px) {
+   .contact-me-form {
+       width: 90%; /* auto */
+      height: 100%;
+       padding: 30px;
+       overflow: scroll;
+   }
+
+
+   .contact-me-form h1 {
+       font-size: clamp(1.5rem, 6vw, 2rem);
+   }
+
+
+   .contact-me-form h2 {
+       font-size: clamp(1.3rem, 5vw, 1.8rem);
+   }
+
+
+   .contact-me-form p,
+   .contact-me-form h2 {
+       font-size: clamp(1rem, 4vw, 1.2rem);
+       max-width: 100%;
+       overflow-wrap: anywhere;
+       line-height: 1.6;
+   }
+  
+
+
 #xbutton{
    font-size: 3rem;
    position: absolute;
-   left: 330px;
+   display: flex;
+   left: 0px;
+   top: 0px;
+   cursor: pointer;
+}
+}
+#xbutton{
+   font-size: 3rem;
+   position: absolute;
+   right: 0px;
    top: 0px;
    cursor: pointer;
 }
@@ -343,5 +383,13 @@ letter-spacing: 1px;
    font-weight: 200px;
    letter-spacing: 0.12ch;
    font-size: clamp(0.875rem, 0.7rem + 1vw, 1.5rem);
+}
+
+
+.row1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
