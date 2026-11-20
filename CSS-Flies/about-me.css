@@ -156,8 +156,16 @@ color: white;
      margin-left: 20px;
      border-radius: 5px 20px;
      border: 3px solid var(--borders);
-      overflow-x: scroll;
+      
 }
+@media screen and (max-width: 500px) {
+ .skills-grid{
+    display: flex;
+   flex-direction: column;
+ }
+}
+
+
 .skills-grid{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
